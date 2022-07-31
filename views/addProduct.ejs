@@ -1,0 +1,30 @@
+<%- include("./partials/Header.ejs", {pageTitle: pageTitle}) %> <%-
+include("./partials/Navigation.ejs") %>
+
+<div class="container w-50">
+  <form action="/addProduct" method="post">
+    <div class="form-group mt-4">
+      <label for="productTitle">Title</label>
+      <input
+        type="text"
+        class="form-control mt-2"
+        id="productTitle"
+        placeholder="Enter product title"
+        name="title"
+      />
+    </div>
+
+    <div class="form-group mt-4">
+      <label for="productDescription">Description</label>
+      <input
+        type="text"
+        class="form-control mt-2"
+        id="productDescription"
+        placeholder="Enter product description"
+        name="description"
+      />
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-4">Submit</button>
+  </form>
+</div>
